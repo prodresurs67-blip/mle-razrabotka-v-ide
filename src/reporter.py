@@ -27,7 +27,7 @@ class DataFrameReporter:
 
 import pandas as pd
 
-data = pd.read_csv('/data/payments.csv')
+data = pd.read_csv('data/payments.csv')
 reporter_1 = DataFrameReporter(float_format='0.02f', percent_format='0.03%')
 reporter_2 = DataFrameReporter(float_format='0.03f', percent_format='0.01%', include_all=True)
 
